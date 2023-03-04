@@ -59,8 +59,16 @@ public partial class TransactionList : ContentPage
 
     }
 
-    private void TapGestureRecognizer_Tapped_ToDelete(object sender, TappedEventArgs e)
+    private async void TapGestureRecognizer_Tapped_ToDelete(object sender, TappedEventArgs e)
     {
+		bool result = await App.Current.MainPage.DisplayAlert("Delete!", "Delete this item?", "Yes", "No");
 
+		if (result)
+		{
+            Transaction trasaction = (Transaction)e.Parameter;
+			_repository.Delete(trasaction);
+
+			Reloade();
+		}
     }
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\devMaui\\FinanceWizeApp\\FinanceWize\\FinanceWize\\FinanceWize.csproj": {}
+    "C:\\Projects\\FinanceWizeApp\\FinanceWize\\FinanceWize\\FinanceWize.csproj": {}
   },
   "projects": {
-    "C:\\devMaui\\FinanceWizeApp\\FinanceWize\\FinanceWize\\FinanceWize.csproj": {
+    "C:\\Projects\\FinanceWizeApp\\FinanceWize\\FinanceWize\\FinanceWize.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\devMaui\\FinanceWizeApp\\FinanceWize\\FinanceWize\\FinanceWize.csproj",
+        "projectUniqueName": "C:\\Projects\\FinanceWizeApp\\FinanceWize\\FinanceWize\\FinanceWize.csproj",
         "projectName": "FinanceWize",
-        "projectPath": "C:\\devMaui\\FinanceWizeApp\\FinanceWize\\FinanceWize\\FinanceWize.csproj",
+        "projectPath": "C:\\Projects\\FinanceWizeApp\\FinanceWize\\FinanceWize\\FinanceWize.csproj",
         "packagesPath": "C:\\Users\\Felipe Mengue\\.nuget\\packages\\",
-        "outputPath": "C:\\devMaui\\FinanceWizeApp\\FinanceWize\\FinanceWize\\obj\\",
+        "outputPath": "C:\\Projects\\FinanceWizeApp\\FinanceWize\\FinanceWize\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [

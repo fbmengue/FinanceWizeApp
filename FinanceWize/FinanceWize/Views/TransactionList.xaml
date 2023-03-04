@@ -28,7 +28,9 @@
                                 BackgroundColor="white"
                                 StrokeShape="RoundRectangle 20">
                             <Border.GestureRecognizers>
-                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_ToDelete"/>
+                                <TapGestureRecognizer 
+                                    CommandParameter="{Binding .}"
+                                    Tapped="TapGestureRecognizer_Tapped_ToDelete"/>
                             </Border.GestureRecognizers>
                             <Label Text="S" 
                                    BackgroundColor="white" 

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XvLZoXTFnQqKqxL3ysWfuUfVB7Jhkpbr8eVqM9M74BBolNYvdI5vi2fejxYSmH4spJyL0ckNVAxTCORKI54dbw==",
+  "dgSpecHash": "G2bRc5ZXBtpfkIfc63HJCTm6nbSya+QWNv8QPUD2qlqg783X5l0zY63n2QloGRw40JeziDpy6ZtLN3FmfVE3kw==",
   "success": true,
-  "projectFilePath": "C:\\devMaui\\FinanceWizeApp\\FinanceWize\\FinanceWize\\FinanceWize.csproj",
+  "projectFilePath": "C:\\Projects\\FinanceWizeApp\\FinanceWize\\FinanceWize\\FinanceWize.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Felipe Mengue\\.nuget\\packages\\communitytoolkit.mvvm\\8.1.0\\communitytoolkit.mvvm.8.1.0.nupkg.sha512",
     "C:\\Users\\Felipe Mengue\\.nuget\\packages\\googlegson\\2.9.1.1\\googlegson.2.9.1.1.nupkg.sha512",
