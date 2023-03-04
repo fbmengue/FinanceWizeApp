@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FinanceWize.Views.TransactionEdit"
+             Title="TransactionEdit">
+    <VerticalStackLayout Spacing="10">
+        <Border Background="black" Stroke="Transparent" Margin="15" Padding="15" StrokeShape="RoundRectangle 30">
+            <Grid RowDefinitions="auto" ColumnDefinitions="*,30">
+                <Label 
+                    Text="Edit"
+                    TextColor="white"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center"
+                    Grid.Row="0"
+                    Grid.Column="0"/>
+                <Image Grid.Row="0"
+                      Grid.Column="1"
+                      HorizontalOptions="Center"
+                      Source="close.png"
+                      WidthRequest="17">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_To_Close"/>
+                    </Image.GestureRecognizers>
+                </Image>
+
+            </Grid>
+        </Border>
+
+        <Label x:Name="LabelError" IsVisible="true" TextColor="red"/>
+        <Grid ColumnDefinitions="*,*" Margin="30,20">
+
+            <RadioButton x:Name="RadioIncome" IsChecked="True" Content="Income"/>
+            <RadioButton x:Name="RadioExpense" Grid.Column="1" HorizontalOptions="End" Content="Spend"/>
+        </Grid>
+
+        <Entry x:Name="EntryName" 
+            Placeholder="Name" Margin="15,0"/>
+        <DatePicker x:Name="DatePickerDate" Margin="15,0"/>
+        <Entry x:Name="EntryValue" Placeholder="Value" Margin="15,0"/>
+
+        <Button Clicked="OnButtonClicked_Save" Text="Save" Margin="15,0"/>
+    </VerticalStackLayout>
+</ContentPage>

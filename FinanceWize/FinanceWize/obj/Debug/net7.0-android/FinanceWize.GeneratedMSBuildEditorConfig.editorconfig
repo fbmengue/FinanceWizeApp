@@ -1,0 +1,51 @@
+is_global = true
+build_property.TargetFramework = net7.0-android
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = true
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.RootNamespace = FinanceWize
+build_property.ProjectDir = C:\devMaui\FinanceWizeApp\FinanceWize\FinanceWize\
+
+[C:/devMaui/FinanceWizeApp/FinanceWize/FinanceWize/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FinanceWize.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/devMaui/FinanceWizeApp/FinanceWize/FinanceWize/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FinanceWize.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/devMaui/FinanceWizeApp/FinanceWize/FinanceWize/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FinanceWize.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/devMaui/FinanceWizeApp/FinanceWize/FinanceWize/Views/TransactionAdd.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FinanceWize.Views.TransactionAdd.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\TransactionAdd.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\TransactionAdd.xaml
+
+[C:/devMaui/FinanceWizeApp/FinanceWize/FinanceWize/Views/TransactionEdit.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FinanceWize.Views.TransactionEdit.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\TransactionEdit.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\TransactionEdit.xaml
+
+[C:/devMaui/FinanceWizeApp/FinanceWize/FinanceWize/Views/TransactionList.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FinanceWize.Views.TransactionList.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\TransactionList.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\TransactionList.xaml

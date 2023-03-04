@@ -1,0 +1,1 @@
+C:\devMaui\FinanceWizeApp\FinanceWize\FinanceWize\FinanceWize.csproj;x64
