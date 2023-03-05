@@ -61,6 +61,7 @@ public partial class TransactionList : ContentPage
 
     private async void TapGestureRecognizer_Tapped_ToDelete(object sender, TappedEventArgs e)
     {
+		await AnimationBorder((Border)sender, true);
 		bool result = await App.Current.MainPage.DisplayAlert("Delete!", "Delete this item?", "Yes", "No");
 
 		if (result)
@@ -70,5 +71,42 @@ public partial class TransactionList : ContentPage
 
 			Reloade();
 		}
+		else
+		{
+			await AnimationBorder((Border)sender, false);
+		}
     }
+
+	private Color _borderOriginalBackgroundColor;
+	private String _labelOriginalText;
+
+	private async Task AnimationBorder(Border border, bool IsDeleteAnimation)
+	{
+		var label = (Label)border.Content;
+
+		if (IsDeleteAnimation)
+		{
+			_borderOriginalBackgroundColor = border.BackgroundColor;
+			_labelOriginalText = label.Text;
+
+			await border.RotateYTo(90, 0400);
+
+			border.BackgroundColor = Colors.Red;
+
+			label.TextColor= Colors.White;
+			label.Text= "X";
+
+            await border.RotateYTo(180, 0400);
+        }
+		else
+		{
+			await border.RotateYTo(90, 0400);
+
+			border.BackgroundColor = _borderOriginalBackgroundColor;
+			label.TextColor= Colors.Black;
+			label.Text= _labelOriginalText;
+
+            await border.RotateYTo(0, 0400);
+        }
+	}
 }

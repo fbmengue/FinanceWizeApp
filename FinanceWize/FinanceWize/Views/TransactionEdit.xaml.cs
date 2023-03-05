@@ -2,6 +2,7 @@ using CommunityToolkit.Mvvm.Messaging;
 using FinanceWize.Enum;
 using FinanceWize.Models;
 using FinanceWize.Repositories;
+using FinanceWize.Utils.KeyboardBugs;
 using System.Text;
 
 namespace FinanceWize.Views;
@@ -18,6 +19,7 @@ public partial class TransactionEdit : ContentPage
 
     private void TapGestureRecognizer_Tapped_To_Close(object sender, TappedEventArgs e)
     {
+        KeyboardBugsFix.HideKeyboard();
         Navigation.PopModalAsync();
     }
 
@@ -47,6 +49,7 @@ public partial class TransactionEdit : ContentPage
 
         SaveTransactionInDatabase();
 
+        KeyboardBugsFix.HideKeyboard();
         Navigation.PopModalAsync();
 
         WeakReferenceMessenger.Default.Send<string>(string.Empty);

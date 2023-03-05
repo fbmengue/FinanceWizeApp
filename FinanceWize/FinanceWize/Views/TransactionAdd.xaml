@@ -29,8 +29,8 @@
         <Label x:Name="LabelError" IsVisible="true" TextColor="red"/>
         <Grid ColumnDefinitions="*,*" Margin="30,20">
             
-            <RadioButton x:Name="RadioIncome" IsChecked="True" Content="Income"/>
-            <RadioButton x:Name="RadioExpense" Grid.Column="1" HorizontalOptions="End" Content="Spend"/>
+            <RadioButton x:Name="RadioIncome" IsChecked="True" Content=" Income"/>
+            <RadioButton x:Name="RadioExpense" Grid.Column="1" HorizontalOptions="End" Content=" Expense"/>
         </Grid>
 
         <Entry x:Name="EntryName" 

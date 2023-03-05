@@ -2,6 +2,7 @@ using CommunityToolkit.Mvvm.Messaging;
 using FinanceWize.Enum;
 using FinanceWize.Models;
 using FinanceWize.Repositories;
+using FinanceWize.Utils.KeyboardBugs;
 using System.Text;
 
 namespace FinanceWize.Views;
@@ -17,6 +18,7 @@ public partial class TransactionAdd : ContentPage
 
     private void TapGestureRecognizer_Tapped_To_Close(object sender, TappedEventArgs e)
     {
+        KeyboardBugsFix.HideKeyboard();
 		Navigation.PopModalAsync();
     }
 
@@ -29,12 +31,14 @@ public partial class TransactionAdd : ContentPage
 
         SaveTransactionInDatabase();
 
+        KeyboardBugsFix.HideKeyboard();
         Navigation.PopModalAsync();
+
+
 
         WeakReferenceMessenger.Default.Send<string>(string.Empty);
 
-        var count = _repository.GetAll().Count;
-        App.Current.MainPage.DisplayAlert("messagem", $"Existem {count} itens", "ok");
+        
     }
 
     private void SaveTransactionInDatabase()

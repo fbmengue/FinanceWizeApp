@@ -8,11 +8,14 @@
     <ContentPage.Resources>
         <ResourceDictionary Source="/Resources/Styles/Colors.xaml"/>
         <ResourceDictionary Source="/Resources/Styles/Colors.xaml">
+            <converters:TransactionNameColorConverter x:Key="TransactionNameColorConverter"/>
+            <converters:TransactionNameConverter x:Key="TransactionNameConverter"/>
+            
             <converters:TransactionValueColorConverter x:Key="TransactionValueColorConverter"/>
             <converters:TransactionValueConverter x:Key="TransactionValueConverter"/>
         </ResourceDictionary>
     </ContentPage.Resources>
-    <VerticalStackLayout>
+    <Grid RowDefinitions="*,190">
 
         <CollectionView x:Name="CollectionViewTransactions">
             <CollectionView.ItemTemplate>
@@ -25,15 +28,15 @@
                         </Grid.GestureRecognizers>
                         <Border WidthRequest="40"
                                 HeightRequest="40"
-                                BackgroundColor="white"
+                                BackgroundColor="{Binding Name, Converter={StaticResource TransactionNameColorConverter}}"
                                 StrokeShape="RoundRectangle 20">
                             <Border.GestureRecognizers>
                                 <TapGestureRecognizer 
                                     CommandParameter="{Binding .}"
                                     Tapped="TapGestureRecognizer_Tapped_ToDelete"/>
                             </Border.GestureRecognizers>
-                            <Label Text="S" 
-                                   BackgroundColor="white" 
+                            <Label Text="{Binding Name, Converter={StaticResource TransactionNameConverter}}" 
+                                   BackgroundColor="Transparent" 
                                    VerticalOptions="Center" 
                                    HorizontalOptions="Center" 
                                    FontSize="20"/>
@@ -56,7 +59,8 @@
 
         
 
-        <Border Margin="10" BackgroundColor="{StaticResource Black}"
+        <Border Grid.Row="1"
+            Margin="10" BackgroundColor="{StaticResource Black}"
                 StrokeThickness="0"
                 Padding="15"
                 StrokeShape="RoundRectangle 30">
@@ -98,5 +102,5 @@
                        Grid.Column="1" FontSize="12" TextColor="white" />
              </Grid>
         </Border>
-    </VerticalStackLayout>
+    </Grid>
 </ContentPage>
